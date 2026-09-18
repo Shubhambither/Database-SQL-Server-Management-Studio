@@ -1,0 +1,6 @@
+select ascii('A')
+select char(65)
+select len('Database')
+select SUBSTRING('databasemanagement',1,4)
+select replace('database management','database','db')
+select upper('sql'),lower('laptop')
