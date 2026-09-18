@@ -1,4 +1,4 @@
---string functions
+--string functions(--string,ascii,char,substring,upper,lower,concat)
 use master
 select ascii('A')
 select char(65)
@@ -8,7 +8,7 @@ select replace('database management','database','db')
 select upper('sql'),lower('laptop')
 select concat('data','base')
 select DIFFERENCE('career','carrier')
---Math Functions
+--Math Functions(abs,power,sqrt,round,cast,floor,ceiling)
 select abs(10)--absolute function
 select sqrt(49)
 select power(2,3)
@@ -21,7 +21,6 @@ select year(getdate()),month(getdate()),day(getdate())
 select dateadd(year,01,getdate())--01,02 will increase years
 create database student
 use student
-create table studentsdb4(studentid int primary key ,name varchar(50),marks int )
 insert into studentsdb4 values(101,'Shubham',49),(102,'Satyam',48),(103,'Thakur',49),(104,'Chotu',47),(105,'Aryan',28),(106,'Puneet',25);
 select count(*) as total_students from studentsdb4;
 select sum(marks) as totalmarks from studentsdb4;
@@ -41,3 +40,21 @@ select name ,marks+5  from studentsdb4
 select max(marks) from studentsdb4
 select min(marks) from studentsdb4
 select avg(marks) from studentsdb4
+
+select sin(1);
+select cos(0)
+select cot(1)
+select pi();
+select log(1);
+select log10(10)
+select sign(-1)
+select radians(180)
+select left('Database',3)
+select right ('Database',3)
+select ltrim(' hello how')
+select rtrim('Hello ')
+select replicate('Database management',2)
+select reverse('Shubham')
+select CHARINDEX('put','computer')
+select SOUNDEX('Heloo')--(4,3,2,1) if 4 than sound similar lower the value ,least the similarity
+select exp(1)
